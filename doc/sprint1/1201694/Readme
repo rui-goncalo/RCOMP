@@ -1,0 +1,129 @@
+RCOMP 2021-2022 Project - Sprint 1 - Member 1201694 folder
+===========================================
+
+***Disclaimer:** To calculate how many outlets we have for each room, we used the structured cabling standards that specify a minimum of two outlets per work area, and also a ratio of two outlets for each 10 square meters of area.*
+
+<hr>
+
+<h2> Building 3 - Floor 0 </h2>
+
+<h3>Structured Cabling</h3>
+
+![](https://raw.githubusercontent.com/rui-goncalo/rcomp/main/1201694/building3_floor0.png)
+
+<h4>Room 3.0.9</h4>
+
+in this room we’ll have an Intermediate Cross-Connect(IC) and a Horizontal Cross-Connect (HC) with 24 connectors. The IC receive optical fibre from the Main Cross-Connect (MCC) and will send the optical fibre to the HC. From HC, we’ll pass copper cable to outlets in the floor. The room - with 9.12m2 - will have 2 outlets.
+
+<h4>Room 3.0.1 / 3.0.2 / 3.0.3 / 3.0.4</h4>
+
+These rooms are the same size 15 m2. With that, we use 4 outlets based in the logic described in the beginning of this document. In this room, like any other one, we have an outlet everywhere less than 3 meters.
+
+<h4>Room 3.0.5 / 3.0.6</h4>
+
+These rooms are the same size 26.24 m2 and because of that, we’ll use 4 outlets. In this room we'll also have an Access Point (AP).
+
+<h4>Room 3.0.7</h4>
+
+This room has an area of 26.24 m2 and because of that, we’ll use 4 outlets. In this room we'll also have a consolidation point with 24 connectors.
+
+<h4>Room 3.0.8</h4>
+
+This room has an area of 15.2 m2 and because of that, we’ll use 4 outlets. In this room we'll also have a consolidation point with 24 connectors.
+
+
+- 1 Intermediate cross-connect
+- 1 Horizontal cross-connect:
+    - 1 Patch Panels (Optical Fibre) with 24 ports each
+- 2 Consolidation Point
+    - 2 Patch Panels (Copper) with 24 ports each
+- 2 Access Points
+- Optical Fibre Cable: 2 meters
+- Copper Cable: 940 meters
+- 34 outlets
+
+<hr>
+
+<h2>Building 3- Floor 1</h2>
+
+<h3>Structured Cabling</h3>
+
+![](https://raw.githubusercontent.com/rui-goncalo/rcomp/main/1201694/building3_floor1.png)
+
+<h4>Room 3.1.10</h4>
+
+With a total area of 6 m2 we can implement here 0 outlets. We also have a HC that receives optical fibre from the IC.
+
+<h4>Room 3.1.1 / 2</h4>
+
+In these rooms we have an area of 25.2 m2 in each one,which means that we will have 4 outlets as well**.**
+The room 3.1.1 also have a consolidation point and have an access point.
+
+<h4>Room 3.1.3</h4>
+
+This room have 20 m2 and have 4 outlet.
+
+<h4>Room 3.1.4 /5</h4>
+
+This room have 18.4 m2 and have 4 outlet.
+
+<h4>Room 3.1.6</h4>
+
+This room have 17.6 m2 and have 4 outlet.
+
+<h4>Room 3.1.7 /8/9</h4>
+
+This room have 24 m2 and have 4 outlet.
+Also have one access point.
+<h3> Inventory - Floor 1 </h3>
+
+- 1 Horizontal cross-connect:
+    - 1 Patch Panels (Optical Fibre) with 24 ports each
+- 1 Consolidation Point
+    - 2 Patch Panels (Copper) with 24 ports each
+- 2 Access Points
+- Optical Fibre Cable: 2 meters
+- Copper Cable: 1178 meters
+- 36 Outlets
+
+<hr>
+
+<h2>Dimensions</h2>
+
+| Room | Length | Width | Area (m2) | Outlets |
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| <strong>3.0.1/2/3/4</strong> | 3 | 5 | 15 | 4 |
+| <strong>3.0.5/6/7</strong> | 8.2 | 3.2 | 26.24 | 4 |
+| <strong>3.0.8</strong> | 3.8 | 4 | 15.2 | 4 |
+| <strong>3.0.9</strong> | 3.8 | 2.4 | 9.12 | 2 |
+| <strong>3.1.1/2</strong> | 6 | 4.2 | 25.2 | 4 |
+| <strong>3.1.3</strong> | 4 | 5 | 20 | 4 |
+| <strong>3.1.4/5</strong> | 4 | 4.6 | 18.4 | 4 |
+| <strong>3.1.6</strong> | 4 | 4.4 | 17.6 | 4 |
+| <strong>3.1.7/8/9</strong> | 6 | 4 | 24 | 4 |
+| <strong>3.1.10</strong> | 3 | 2 | 6 | 0 |
+
+
+<hr>
+
+<h2>-> Intermediate Cross-Connect</h2>
+
+The IC receives the optical fibre cable from the Main Cross-Connect. Usually exists one per building and make the connection to all the HCs.
+
+<hr>
+
+<h2>-> Horizontal Cross-Connect</h2>
+
+The area of this building is approximately 400 m2, so no needed more than one per floor.
+
+<hr>
+
+<h2>-> Consolidation Point</h2>
+
+Consolidation Points give the utility of regenerate the signal to make possible reach outlets that may possible be too far away or in zones with a big amount of outlets. We implemented 2 in floor 0 and 1 in floor 1.
+
+<hr>
+
+<h2>-> Copper Cable</h2>
+
+To connect our HCs to the outlets we will use CAT7 cables. When compared to CAT6a, the use is justified, since despite having the same maximum speed, the frequency is doubled. That said, the signal will be able to pass through CAT7 cable twice as many times as it will pass through CAT6a.
